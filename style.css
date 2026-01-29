@@ -1,0 +1,23 @@
+:root {
+    --navy: #1a2a44; --gold: #c5a059; --dark: #050505; --immortal: #b026ff;
+}
+body { margin: 0; font-family: 'Cairo', sans-serif; background: var(--dark); color: white; }
+
+/* الرئيسية */
+.hero-section { height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; background: radial-gradient(circle, var(--navy) 0%, #000 100%); text-align: center; }
+.main-logo { width: 140px; border-radius: 50%; border: 3px solid var(--gold); margin-bottom: 20px; box-shadow: 0 0 25px rgba(197, 160, 89, 0.3); }
+.brand-name { font-size: 3.5rem; letter-spacing: 5px; color: var(--gold); margin: 0; }
+.selection-grid { display: flex; gap: 20px; margin-top: 40px; padding: 0 20px; }
+.card { background: rgba(255,255,255,0.05); border: 1px solid rgba(197, 160, 89, 0.2); padding: 30px; border-radius: 25px; width: 280px; text-decoration: none; color: white; transition: 0.4s; }
+.card:hover { transform: translateY(-10px); border-color: var(--gold); background: rgba(197, 160, 89, 0.1); }
+.action-btn { display: block; margin-top: 20px; background: var(--gold); color: var(--navy); padding: 10px; border-radius: 50px; font-weight: bold; }
+
+/* الرتب */
+.status-card { background: rgba(255,255,255,0.03); padding: 25px; border-radius: 20px; border-right: 6px solid var(--gold); margin-top: 50px; }
+.ranks-progress { display: flex; justify-content: space-between; margin-top: 30px; }
+.step { text-align: center; opacity: 0.3; flex: 1; }
+.step span { width: 35px; height: 35px; background: #333; display: flex; align-items: center; justify-content: center; border-radius: 50%; margin: 0 auto 10px; }
+.step.done { opacity: 1; color: var(--gold); }
+.step.done span { background: var(--gold); color: black; }
+.step.current { opacity: 1; color: var(--immortal); }
+.step.current span { background: var(--immortal); box-shadow: 0 0 15px var(--immortal); color: white; }
